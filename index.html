@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyecto DNA | Extracción de ADN y CRISPR-Cas9</title>
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: radial-gradient(circle at top, #021226, #000000);
+      color: #e0f7ff;
+      scroll-behavior: smooth;
+      background-image: url('imagenes/fondo-adn.gif');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    header {
+      background: linear-gradient(90deg, #002b55, #0066cc);
+      padding: 20px;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 0 20px #00b3ff;
+    }
+    header h1 {
+      font-size: 2.2em;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 28, 51, 0.8);
+      gap: 25px;
+      padding: 12px 0;
+      box-shadow: 0 0 10px #00b3ff;
+    }
+    nav a {
+      color: #00b3ff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    nav a:hover { color: #fff; transform: scale(1.1); }
+
+    section {
+      padding: 60px 10%;
+      animation: fadeIn 1.5s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    h2 {
+      color: #00b3ff;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      border-left: 5px solid #00b3ff;
+      padding-left: 10px;
+    }
+    p {
+      line-height: 1.8;
+      margin-bottom: 15px;
+    }
+
+    .card {
+      background: rgba(0, 0, 30, 0.6);
+      border: 1px solid #00b3ff;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+      box-shadow: 0 0 15px #004d80;
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    img {
+      display: block;
+      margin: 20px auto;
+      border-radius: 15px;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 0 15px #00b3ff;
+    }
+
+    .galeria {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    .galeria img {
+      width: 45%;
+      max-width: 250px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #00eaff;
+    }
+
+    footer {
+      background-color: #001c33;
+      text-align: center;
+      padding: 20px;
+      color: #00b3ff;
+      font-size: 0.9em;
+      box-shadow: 0 -2px 10px #00b3ff;
+    }
+
+    .highlight {
+      color: #00eaff;
+      font-weight: 600;
+    }
+
+    .team {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      margin-top: 20px;
+    }
+    .member {
+      background: rgba(0, 20, 40, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      border: 1px solid #00b3ff;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🔬 Proyecto DNA</h1>
+    <p>Educación Secundaria – Computación e Información | Ciclo II</p>
+  </header>
+
+  <nav>
+    <a href="#adn">ADN y ARN</a>
+    <a href="#experimento">Extracción de ADN del Kiwi</a>
+    <a href="#crispr">CRISPR-Cas9</a>
+    <a href="#equipo">Nuestro Equipo</a>
+  </nav>
+
+  <!-- Sección ADN y ARN -->
+  <section id="adn">
+    <h2>🧬 ADN y ARN</h2>
+    <div class="card">
+      <p>El <span class="highlight">ADN (Ácido Desoxirribonucleico)</span> contiene las instrucciones genéticas de todos los seres vivos.</p>
+      <p>El <span class="highlight">ARN (Ácido Ribonucleico)</span> transporta esa información para producir proteínas.</p>
+      <p>Ambos forman el <strong>código de la vida</strong> y determinan nuestras características biológicas.</p>
+      <img src="imagenes/adn.png" alt="Estructura del ADN y ARN">
+    </div>
+  </section>
+
+  <!-- Sección Experimento -->
+  <section id="experimento">
+    <h2>🥝 Experimento: Extracción de ADN del Kiwi</h2>
+    <div class="card">
+      <p>Realizamos un experimento para observar el <strong>ADN del kiwi</strong> a simple vista.</p>
+      <p><strong>Materiales:</strong> kiwi maduro, detergente, sal, alcohol frío, vaso transparente, filtro y cuchara.</p>
+      <p><strong>Procedimiento:</strong></p>
+      <ol>
+        <li>Triturar el kiwi con agua y detergente.</li>
+        <li>Agregar sal y mezclar suavemente.</li>
+        <li>Filtrar la mezcla con una tela fina.</li>
+        <li>Verter alcohol frío lentamente por el borde del vaso.</li>
+        <li>Observar el ADN blanco en la parte superior.</li>
+      </ol>
+      <p>Así demostramos que el ADN puede extraerse y verse fuera de las células.</p>
+      <div class="galeria">
+        <img src="imagenes/kiwiw.jpg" alt="Paso 1 - Triturando el kiwi">
+        <img src="imagenes/kiwi2.jpg" alt="Paso 2 - Mezclando y filtrando">
+        <img src="imagenes/kiwi3.jpg" alt="Paso 3 - Observando el ADN">
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección CRISPR-Cas9 -->
+  <section id="crispr">
+    <h2>🧪 CRISPR-Cas9: La tijera genética del futuro</h2>
+    <div class="card">
+      <p><span class="highlight">CRISPR-Cas9</span> es una herramienta que permite cortar y modificar genes de forma precisa, rápida y económica.</p>
+      <p>En 2025, se utiliza para <strong>tratar enfermedades genéticas</strong> como anemia falciforme y distrofia muscular, y para mejorar cultivos resistentes a plagas y sequías.</p>
+      <p><strong>Cómo funciona:</strong></p>
+      <ul>
+        <li>El ARN guía identifica el gen a editar.</li>
+        <li>La enzima Cas9 corta el ADN.</li>
+        <li>El ADN se repara con la versión corregida.</li>
+      </ul>
+      <img src="imagenes/crispr.jpg" alt="Esquema CRISPR-Cas9">
+      <p class="highlight">“Con CRISPR-Cas9, la humanidad no solo puede leer el código de la vida… ahora puede reescribirlo.”</p>
+    </div>
+  </section>
+
+  <!-- Sección Equipo -->
+  <div style="background-color:#2f3f4f; color:white; font-family:'Segoe UI', sans-serif; text-align:center; padding:30px; border-radius:15px; width:600px; margin:auto;">
+  <h2 style="color:#bde0fe;">🧬Equipo DNA🧬</h2>
+  <p>
+    CASTILLO SUMIRE, Belssy Mitzy<br>
+    FLORES REYES, María Fernanda<br>
+    FLORIAN BALDARRAGO, Danna Liz<br>
+    FRANCO MEDINA, Jorge Lázaro<br>
+    KANCHA HUAMÁN, Aida Zulema<br>
+    TERRONES CÓRDOVA, Catherine Lucy Naomi
+  </p>
+  <p>
+    Estudiantes de Educación Secundaria<br>
+    Especialidad: Computación e Información<br>
+    Ciclo II
+  </p>
+</div>
+      </div>
+    </div>
+
+    <div class="galeria">
+      <img src="imagenes/equipo1.jpg" alt="Equipo DNA trabajando">
+      <img src="imagenes/equipo2.jpg" alt="Presentación del proyecto">
+      <img src="imagenes/equipo3.jpg" alt="Feria científica 2025">
+      <img src="imagenes/equipo4.jpg" alt="Feria científica 2025">
+      <img src="imagenes/equipo5.jpg" alt="Feria científica 2025">
+      <img src="imagenes/equipo6.jpg" alt="Feria científica 2025">
+
+    </div>
+
+
+  </section>
+
+  <footer>
+    <p>© 2025 Proyecto DNA – Feria Científica | Diseño y programación por el equipo DNA 💻</p>
+  </footer>
+
+</body>
+</html>
